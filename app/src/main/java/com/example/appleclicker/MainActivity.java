@@ -5,6 +5,7 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     Button start;
-
+    TextView czas, punkty;
     ImageView japuszko1, japuszko2, japuszko3, japuszko4, japuszko5, japuszko6, japuszko7, japuszko8, japuszko9;
     private int ileSekund = 10;
     private CountDownTimer countDownTimer;
@@ -23,13 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void rozpocznijGre(){
         if(!czyGraTrwa){
+
             uruchomZegar();
             czyGraTrwa = true;
         }
-    }
-
-    private void zatrzymajZegar(){
-        countDownTimer.cancel();
     }
 
     private void uruchomZegar(){
@@ -42,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTick(long l) {
                 ileSekund = (int) (l/1000);
-                button.setText(ileSekund+"");
+                czas.setText(ileSekund+"");
             }
         };
         countDownTimer.start();
@@ -66,8 +64,10 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         rozpocznijGre();
+                        japuszko1.setImageIcon();
                     }
                 }
         );
+
     }
 }
