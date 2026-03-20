@@ -30,7 +30,7 @@
             android:id="@+id/czas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
+            android:text="0"
             android:textSize="38dp"/>
         
         
@@ -50,7 +50,7 @@
             android:id="@+id/punkty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
+            android:text="0"
             android:textSize="38dp"/>
         
         
@@ -67,55 +67,55 @@
             android:id="@+id/japuszko1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/CzerfoneJapuszko"
+            app:srcCompat="@drawable/czerfonejapuszko"
             />
         <ImageView
             android:id="@+id/japuszko2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/CzerfoneJapuszko"
+            android:src="@drawable/czerfonejapuszko"
             />
         <ImageView
             android:id="@+id/japuszko3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/CzerfoneJapuszko"
+            android:src="@drawable/czerfonejapuszko"
             />
         <ImageView
             android:id="@+id/japuszko4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/CzerfoneJapuszko"
+            android:src="@drawable/czerfonejapuszko"
             />
         <ImageView
             android:id="@+id/japuszko5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/CzerfoneJapuszko"
+            android:src="@drawable/czerfonejapuszko"
             />
         <ImageView
             android:id="@+id/japuszko6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/CzerfoneJapuszko"
+            android:src="@drawable/czerfonejapuszko"
             />
         <ImageView
             android:id="@+id/japuszko7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/CzerfoneJapuszko"
+            android:src="@drawable/czerfonejapuszko"
             />
         <ImageView
             android:id="@+id/japuszko8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/CzerfoneJapuszko"
+            android:src="@drawable/czerfonejapuszko"
             />
         <ImageView
             android:id="@+id/japuszko9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/CzerfoneJapuszko"
+            android:src="@drawable/czerfonejapuszko"
             />
 
 
@@ -123,7 +123,7 @@
     </GridLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
